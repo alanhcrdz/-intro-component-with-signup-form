@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+ height: 100%;
+ background:hsl(0, 100%, 74%) url('../images/bg-intro-desktop.png');
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ overflow: hidden;
+
+}
+.clear{
+    clear: both;
+}
+
+.container{
+    align-items: center;
+    display: grid;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    max-height: 800px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+
+.title h2{
+    max-width: 500px;
+    color: white;
+    font-size: 3.5rem;
+}
+.title p{
+    font-size: 15px;
+    max-width: 500px;
+    color: white;
+
+}
+ .header button span{
+    color: white;
+}
+.header button{
+    box-shadow:  0 6px 0 #00000060;
+    font-size: 13px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 520px;
+    border-radius: 8px;
+    color: hsl(246, 25%, 77%);
+    border: none;
+    padding: 20px;
+    background: hsl(248, 32%, 49%);
+    cursor: pointer;
+    
+    
+}
+.header button:hover{
+    background: hsl(248, 33%, 41%);
+    transition: 0.4s;
+
+
+}
+.myform{
+
+    margin-top: 30px;
+    padding: 30px;
+    height: 100%;
+    width: 90%;
+    max-height: 680px;
+    border-radius: 8px;
+    max-width: 520px;
+    background: white;
+    position: relative;
+
+}
+
+input[type=text],
+[type=email],
+[type=password]{
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    outline: none;
+
+    
+
+
+}
+
+
+input:focus{
+   border:  1px solid hsl(249, 10%, 26%);
+}
+
+
+input[type=submit]{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    background: hsl(154, 59%, 51%);
+    color: white;
+    font-size: 13px;
+    box-shadow:  0 4px 0 #00000060;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid hsl(154, 59%, 51%);
+    
+
+}
+
+[type=submit]:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background: hsl(154, 52%, 46%);
+
+
+}
+
+.disclaimer small{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 13px;
+    color: hsl(246, 25%, 77%);
+}
+
+.disclaimer span{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+.disclaimer a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+
+}
+
+/* error */
+
+
+#name-error,#lname-error,#email-error,#password-error {
+    display: none;
+    font-weight: 600;
+    position: relative;
+    top: -15px;
+    left: 58%;
+    font-size: 13px;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+}
+
+#e-icon1,#e-icon2,#e-icon3,#e-icon4{
+    display: none;
+    float: right;
+    position: relative;
+    right: 5%;
+    bottom: 60px;
+
+}
+/*  */
+
+
+
+/* Media Querys */
+
+@media screen and (max-width:1024px){
+body{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+.grid{
+    grid-template-columns: none;
+    margin-right: 10%;
+  
+    
+
+
+}
+
+.grid h2{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center  ;
+}
+
+.grid p{
+    width: 100%;
+    text-align: center;
+
+}
+
+.header button{
+    box-shadow:  0 4px 0 #00000060;
+    font-size: 13px;
+    padding: 10px;
+    width: 90%;
+
+    
+    
+}
+
+.myform{
+    top: 0;
+    height: 30%;
+    max-height: 800px;
+    width: 90%;
+    max-width: 600px;
+}
+
+input[type=text],
+[type=email],
+[type=password]{
+margin:20px auto;
+padding: 8px;
+width: 100%;
+}
+
+input[type=submit]
+{
+    padding: 8px;
+    margin:20px auto;
+    width: 90%;
+
+   }
+
+   .disclaimer small{
+       font-size: 10px;
+   }
+
+   #name-error,#lname-error,#email-error,#password-error {
+    position: relative;
+    top: -10px;
+    left: 65%;
+    font-size: 10px;
+}
+
+    #e-icon1,#e-icon2,#e-icon3,#e-icon4{
+    position: relative;
+    right: 5%;
+    bottom: 52px;
+    width: 5%;
+
+    
+
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    body{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 768px;
+    }
+    .container{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    
+    .grid{
+        grid-template-columns: none;
+        margin-right: 10%;
+        
+
+        
+    
+    
+    }
+    
+    .grid h2{
+        font-size: 2rem;
+        width: 100%;
+        text-align: center  ;
+    }
+    
+    .grid p{
+        width: 100%;
+        text-align: center;
+    
+    }
+    
+    .header button{
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+
+    }
+    .myform{
+        margin: 30px  auto;
+        width: 90%;
+        max-width: 600px;
+        height: 30%;
+        max-height: 700px;
+    
+    
+    }
+
+   
+    #name-error,#lname-error,#email-error,#password-error {
+        position: relative;
+        left: 50%;
+        font-size: 10px;
+    }
+    
+        #e-icon1,#e-icon2,#e-icon3,#e-icon4{
+        position: relative;
+        right: 5%;
+        bottom: 50px;
+        width: 5%;
+    
+    }
+    
+    input[type=text],
+    [type=email],
+    [type=password]{
+    margin:20px auto;
+    width: 100%;
+    }
+    
+    input[type=submit]
+    {
+        margin:20px auto;
+        width: 90%;
+    
+       }
+
+
+
+    
+
+}
+
+}

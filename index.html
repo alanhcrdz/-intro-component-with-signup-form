@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Component With Sign Up Form Master</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="grid">
+            <div class="title">
+            <h2>Learn to code by watching others</h2>
+            <p>See how experienced developers solve prroblems in real-time.
+                Watching scripted tutorials is great, but understanding how
+                developers think is invaluable.</p>
+           
+        </div><!-- title -->
+       
+
+                <div class="header">
+                    <button type="button"><strong><span>Try it free 7 days</span> </strong> then $20/mo. thereafter</button>
+              
+
+                <div class="myform">
+                    <form  id="form" onsubmit="return checkForm(this);">
+                        <input type="text"  placeholder="First Name" id="first-name" name="inputfield" >
+                        <img src="images/icon-error.svg" alt="icon" id="e-icon1" >
+                        <small id="name-error">First Name cannot be empty</small>
+                        <div class="clear"></div>
+
+                        
+                        <input type="text" name="inputfield" placeholder="Last Name" id="last-name" autocomplete="on">
+                        <img src="images/icon-error.svg" alt="icon" id="e-icon2">
+                        <small id="lname-error">Last Name cannot be empty</small>
+                        <div class="clear"></div>
+
+
+                        
+                        <input type="email" name="inputfield" placeholder="Email Address" id="email" autocomplete="on">
+                        <img src="images/icon-error.svg" alt="icon" id="e-icon3">
+                        <small id="email-error">Looks like this is not an email</small>
+                        <div class="clear"></div>
+
+                        <input type="password" name="inputfield" placeholder="Password" id="password" autocomplete="on">
+                        <img src="images/icon-error.svg" alt="icon" id="e-icon4">
+                        <small id="password-error">Password cannot be empty</small>
+                        
+
+                        <input type="submit" name="submit" value="claim your free trial">
+                        <div class="disclaimer">
+                           
+                            <div class="clear"></div>
+                            <small>By clicking the button, you are agreeing to our <strong> <span ><a href="#">Terms and Services</a></span> </strong> </small>
+                            <div class="clear"></div>
+                        </div><!-- disclaimer -->
+                        <div class="clear"></div>
+                    </form>
+                </div><!-- form -->
+            </div><!-- header -->
+
+
+           
+           
+        </div><!-- grid -->
+
+        
+
+    </div><!-- container -->
+
+
+    <!-- Scripts -->
+        <script src="js/script.js"></script>
+    <!--  -->
+</body>
+</html>
