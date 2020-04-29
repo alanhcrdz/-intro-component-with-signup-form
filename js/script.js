@@ -21,8 +21,6 @@ function checkForm(){
     
     //characters regex
     var name_re = /^[a-z-A-Z-0-9]+$/;
-/*     var email_re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
- */     
     
     
     //check if field empty
@@ -61,7 +59,23 @@ function checkForm(){
         return false;
 
     }
-    return true;
+
+//validate email
+    var email_re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      
+
+if (!email_re.test(email)) {
+    error_email.style.display = 'block';
+
+    return false;
+    
+    }
+
+        return true;
+
+    
+
+    
     
     }
     
