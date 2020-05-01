@@ -15,7 +15,6 @@ body{
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
- overflow: hidden;
 
 }
 .clear{
@@ -165,7 +164,6 @@ input[type=submit]{
 
 
 #name-error,#lname-error,#email-error,#password-error {
-    display: none;
     font-weight: 600;
     position: relative;
     top: -15px;
@@ -183,6 +181,8 @@ input[type=submit]{
     bottom: 60px;
 
 }
+
+
 /*  */
 
 

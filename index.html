@@ -24,28 +24,30 @@
               
 
                 <div class="myform">
-                    <form  id="form" onsubmit="return checkForm(this);">
+                    <form  id="form">
+                        <label for="first-name" aria-label="hidden"></label>
                         <input type="text"  placeholder="First Name" id="first-name" name="inputfield" >
                         <img src="images/icon-error.svg" alt="icon" id="e-icon1" >
-                        <small id="name-error">First Name cannot be empty</small>
+                        <small id="name-error"></small>
                         <div class="clear"></div>
 
-                        
+                        <label for="last-name" aria-label="hidden"></label>
                         <input type="text" name="inputfield" placeholder="Last Name" id="last-name" autocomplete="on">
                         <img src="images/icon-error.svg" alt="icon" id="e-icon2">
-                        <small id="lname-error">Last Name cannot be empty</small>
+                        <small id="lname-error"></small>
                         <div class="clear"></div>
 
 
-                        
+                        <label for="email" aria-label="hidden"></label>
                         <input type="email" name="inputfield" placeholder="Email Address" id="email" autocomplete="on">
                         <img src="images/icon-error.svg" alt="icon" id="e-icon3">
-                        <small id="email-error">Looks like this is not an email</small>
+                        <small id="email-error"></small>
                         <div class="clear"></div>
 
+                        <label for="password" aria-label="hidden"></label>
                         <input type="password" name="inputfield" placeholder="Password" id="password" autocomplete="on">
                         <img src="images/icon-error.svg" alt="icon" id="e-icon4">
-                        <small id="password-error">Password cannot be empty</small>
+                        <small id="password-error"></small>
                         
 
                         <input type="submit" name="submit" value="claim your free trial">
@@ -59,14 +61,7 @@
                     </form>
                 </div><!-- form -->
             </div><!-- header -->
-
-
-           
-           
         </div><!-- grid -->
-
-        
-
     </div><!-- container -->
 
 
