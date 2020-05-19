@@ -15,6 +15,9 @@ body{
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
+ height: 100%;
+
+
 
 }
 .clear{
@@ -24,10 +27,10 @@ body{
 .container{
     align-items: center;
     display: grid;
-    height: 100vh;
     margin: 0 auto;
     max-width: 1440px;
     width: 100%;
+
 }
 
 
@@ -38,7 +41,8 @@ body{
     max-height: 800px;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+
+
     
 }
 
@@ -46,11 +50,13 @@ body{
     max-width: 500px;
     color: white;
     font-size: 3.5rem;
+
 }
 .title p{
     font-size: 15px;
     max-width: 500px;
     color: white;
+
 
 }
  .header button span{
@@ -78,7 +84,6 @@ body{
 
 }
 .myform{
-
     margin-top: 30px;
     padding: 30px;
     height: 100%;
@@ -88,6 +93,7 @@ body{
     max-width: 520px;
     background: white;
     position: relative;
+
 
 }
 
@@ -189,37 +195,38 @@ input[type=submit]{
 
 /* Media Querys */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:991px){
 body{
     margin: 0 auto;
     width: 100%;
     max-width: 1024px;
+
 }
 .container{
     margin: 0 auto;
     width: 100%;
+
 
 }
 
 
 .grid{
     grid-template-columns: none;
-    margin-right: 10%;
-  
-    
-
 
 }
 
 .grid h2{
     font-size: 2rem;
     width: 100%;
-    text-align: center  ;
+    text-align: center;
+    
+
 }
 
 .grid p{
     width: 100%;
     text-align: center;
+    
 
 }
 
@@ -228,17 +235,17 @@ body{
     font-size: 13px;
     padding: 10px;
     width: 90%;
-
+    
     
     
 }
 
 .myform{
-    top: 0;
-    height: 30%;
-    max-height: 800px;
+    height: auto;
     width: 90%;
     max-width: 600px;
+
+
 }
 
 input[type=text],
@@ -282,11 +289,11 @@ input[type=submit]
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     body{
         margin: 0 auto;
         width: 100%;
-        max-width: 768px;
+        max-width: 767px;
     }
     .container{
         margin: 0 auto;
@@ -296,18 +303,14 @@ input[type=submit]
     
     .grid{
         grid-template-columns: none;
-        margin-right: 10%;
-        
 
-        
-    
-    
     }
     
     .grid h2{
         font-size: 2rem;
         width: 100%;
-        text-align: center  ;
+        text-align: center;
+
     }
     
     .grid p{
@@ -320,14 +323,15 @@ input[type=submit]
         display: block;
         width: 90%;
         margin: 20px auto;
-
     }
+
     .myform{
         margin: 30px  auto;
         width: 90%;
         max-width: 600px;
         height: 30%;
         max-height: 700px;
+
     
     
     }
@@ -364,6 +368,29 @@ input[type=submit]
 
 
     
+
+}
+
+@media screen and (max-width:479px ){
+    /* start of phone styles */
+    body{
+        width: 90%;
+        max-width: 479px;
+    }
+    .container{
+        margin: 0 auto;
+        width: 100%;
+
+    }
+    
+    .myform{
+        width: 90%;
+        max-width: 600px;
+        max-height: 600px;
+    }
+
+   
+
 
 }
 
